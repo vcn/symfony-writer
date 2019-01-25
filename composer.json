@@ -1,0 +1,22 @@
+{
+  "name": "vcn/symfony-writer",
+  "description": "Stream writing library that supports listening in on the stream",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Gerrit Drost",
+      "email": "gdrost@vcn.nl"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Vcn\\Symfony\\HttpFoundation\\Writer\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=7.1",
+    "ext-mbstring": "*",
+    "symfony/http-foundation": "^4.2"
+  }
+}
