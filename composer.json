@@ -17,6 +17,6 @@
   "require": {
     "php": ">=7.1",
     "ext-mbstring": "*",
-    "symfony/http-foundation": "^4.2"
+    "symfony/http-foundation": "^4.2 || ^5.0"
   }
 }
