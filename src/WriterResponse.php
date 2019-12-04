@@ -2,6 +2,7 @@
 
 namespace Vcn\Symfony\HttpFoundation\Writer;
 
+use LogicException;
 use Symfony\Component\HttpFoundation\StreamedResponse;
 
 class WriterResponse extends StreamedResponse
@@ -38,7 +39,7 @@ class WriterResponse extends StreamedResponse
         $this->streamed = true;
 
         if (null === $this->callback) {
-            throw new \LogicException('The Response callback must not be null.');
+            throw new LogicException('The Response callback must not be null.');
         }
 
         $writer = new Writer(
